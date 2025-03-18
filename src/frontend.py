@@ -25,7 +25,7 @@ class WandererGameUI:
         self.chat_frame = tk.Frame(self.root)
         self.chat_frame.pack(pady=5, fill=tk.BOTH, expand=True)
 
-        self.chat_text = Text(self.chat_frame, wrap=tk.WORD, height=10, state=tk.DISABLED)
+        self.chat_text = Text(self.chat_frame, wrap=tk.WORD, height=8, state=tk.DISABLED)
         self.chat_text.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
         self.chat_scroll = Scrollbar(self.chat_frame, command=self.chat_text.yview)
@@ -45,9 +45,10 @@ class WandererGameUI:
 
         # === Example Usage ===
         self.update_chat("Game started. Welcome to The Wanderer game!")
-        self.load_image()
         self.game_ctrl = TheWandererGame()
-        self.update_chat(f"Environment description: {self.game_ctrl.get_env_desc()}")
+        env_desc = self.game_ctrl.generate_env_desc()
+        self.load_image()
+        self.update_chat(f"Environment description: {env_desc}")
         self.update_chat(f"'{self.game_ctrl.generate_entity_exchange()}'")
 
     def update_chat(self, message):

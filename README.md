@@ -3,8 +3,8 @@ The Wanderer is a single-player adventure game where players explore foreign lan
 
 **The game leverages DeepSeek's Janus-Pro 7B LLM for generating dynamic narratives and interactions.**
 
-![snapshot.png](snapshot.png)
-
+![snapshot_1.png](snapshot_1.png)
+![snapshot_2.png](snapshot_2.png)
 ## To Run
 > Tested with Python 3.10.16
 
@@ -58,7 +58,7 @@ Each new level logically follows from the previous one, adapting to the user's i
 
 ---
 
-### Poetry: The Wanderer’s Path
+### Who is the wanderer?
 
 Alone he walks, a fleeting shade,
 Through lands unknown, through light and fade.

@@ -21,7 +21,7 @@ class TheWandererGame:
         self.helpful_entity = 'helpful bird'  # Main talking entity that is helping the wanderer
         self.exchange_conv = []  # Holds the entire conversation history of the current level
 
-    def get_env_desc(self):
+    def generate_env_desc(self):
         """ Called one time after initialization to generate the first level area.
          Otherwise, update_env_desc should be used.
 
@@ -198,7 +198,7 @@ class TheWandererGame:
 if __name__ == '__main__':
     game_ctrl = TheWandererGame()
     # game_ctrl.generate_wanderer_img()
-    print(game_ctrl.get_env_desc())
+    print(game_ctrl.generate_env_desc())
     # game_ctrl.generate_env_img()
     print(game_ctrl.generate_entity_exchange())
     while 1:

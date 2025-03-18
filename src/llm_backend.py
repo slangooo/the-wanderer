@@ -96,7 +96,7 @@ class MultimodalLlm:
     @torch.inference_mode()
     def generate_image(self,
                        description: str,
-                       temperature: float = 1,
+                       temperature: float = 0.00001,
                        parallel_size: int = 1,
                        cfg_weight: float = CFG_WEIGHT_IMG,
                        image_token_num_per_image: int = 576,

@@ -13,8 +13,8 @@ ENV_IMG_PATH = BASE_DIR / "images" / "env.jpg"
 FINAL_IMG_PATH = BASE_DIR / "images" / "final.png" #Final image to be shown on the GUI
 
 """LLM Text GEN"""
-TEXT_GEN_MAX_TOKENS = 1024
-CFG_WEIGHT_IMG = 7
+TEXT_GEN_MAX_TOKENS = 512
+CFG_WEIGHT_IMG = 5
 
 if __name__ == '__main__':
     print(MODEL_PATH.parent)
